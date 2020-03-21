@@ -5,12 +5,29 @@ var minifyCSS   = require('gulp-cssnano');
 var prefix      = require('gulp-autoprefixer');
 var ftp         = require( 'vinyl-ftp' );
 
-/* gulp.task('sync', function() {
-    browserSync.init({
-        proxy: "my_project.dev",
-        files: "*.html,css/*css,js/*.js"
-    });
-}); */
+// fetch command line arguments
+const arg = (argList => {
+    let arg = {}, a, opt, thisOpt, curOpt;
+    for (a = 0; a < argList.length; a++) {
+  
+      thisOpt = argList[a].trim();
+      opt = thisOpt.replace(/^\-+/, '');
+  
+      if (opt === thisOpt) {
+        // argument value
+        if (curOpt) arg[curOpt] = opt;
+        curOpt = null;
+  
+      }
+      else {
+        // argument name
+        curOpt = opt;
+        arg[curOpt] = true;
+  
+      }
+    }
+    return arg;
+  })(process.argv);
 
 // static server
 gulp.task('sync', function() {
@@ -26,8 +43,8 @@ gulp.task('sync', function() {
 gulp.task( 'deploy', function () {
     var conn = ftp.create( {
         host:       'ftp31.world4you.com',
-        user:       'ftp2678461',
-        password:   '62km9fk',
+        user:       arg.user || arg.u,          // from the command line -user or -u
+        password:   arg.password || arg.p,      // from the command line -password or -p
         parallel:   1,
         log:        gutil.log
     });
