@@ -1,0 +1,317 @@
+body, h1, h2, h3, h4, h5 {
+    font-family: 'Lato', sans-serif;
+}
+
+h1, .hero-section-text, h2 {
+    font-weight: 900;
+}
+
+.menu>li>a, .hero-section-text {
+    color: white;
+}
+
+.hero-section {
+    background: url("../img/bg.svg") no-repeat top center scroll;
+    background-size: cover;
+    padding: 0px;
+}
+
+.logo {
+    width: 200px;
+    min-width: 100px;
+}
+
+.hero-section-image {
+    margin: auto;
+    max-width: 400px;
+}
+
+.hero-section-text {
+    margin: auto;
+}
+
+.cropcircle {
+    width: 300px;
+    height: 300px;
+    border-radius: 100%;
+    border: solid 3px #F5CD4A;
+    background: #eee no-repeat center;
+    background-size: cover;
+    background-image: url('../img/angelika.jpg');
+}
+
+/* small only */
+
+@media screen and (max-width: 39.9375em) {
+    .logo {
+        width: 100px;
+    }
+    .hero-section-image {
+        width: 170px;
+    }
+    .cropcircle {
+        width: 120px;
+        height: 120px;
+    }
+    .hero-section {
+        min-height: 400px;
+    }
+    h1 {
+        font-size: 1.2em;
+    }
+    h2 {
+        font-size: 1em;
+    }
+    h3 {
+        font-size: 0.9em;
+    }
+    .about-container {
+        column-count: 1;
+    }
+    .masonry {
+        column-count: 1;
+    }
+}
+
+/* medium only */
+
+@media screen and (min-width: 40em) and (max-width: 63.9375em) {
+    .logo {
+        width: 100px;
+    }
+    .hero-section-image {
+        width: 300px;
+    }
+    .hero-section {
+        min-height: 550px;
+    }
+    h1 {
+        font-size: 2em;
+    }
+    h2 {
+        font-size: 1.6em;
+    }
+    h3 {
+        font-size: 1.4em;
+    }
+    .about-container {
+        column-count: 1;
+    }
+    .masonry {
+        column-count: 3;
+    }
+}
+
+/* large and above */
+
+@media screen and (min-width: 64em) {
+    .hero-section {
+        min-height: 700px;
+    }
+    .about-container {
+        grid-template-columns: 50% 50%;
+    }
+    .masonry {
+        column-count: 4;
+    }
+}
+
+/* for reference 
+Small only
+@media screen and (max-width: 39.9375em) {}
+
+Medium and up
+@media screen and (min-width: 40em) {}
+
+Medium only
+@media screen and (min-width: 40em) and (max-width: 63.9375em) {}
+
+Large and up
+@media screen and (min-width: 64em) {}
+
+Large only
+@media screen and (min-width: 64em) and (max-width: 74.9375em) {}*/
+
+.offers-section, .testimonials-section, .about-section, .contact-section, .footer-section, .elearning-section {
+    padding-top: 3em;
+    padding-bottom: 3em;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+}
+
+.offers-section, .testimonials-section, .contact-section, .footer-section {
+    background-color: white;
+    color: black;
+}
+
+.offers-section h1, .offers-section h2 {
+    color: #70C1B3;
+    font-weight: 600;
+}
+
+.about-section, .elearning-section {
+    background-color: #70C1B3;
+    color: white;
+}
+
+.offers-section h1 {
+    text-align: center;
+}
+
+/* 
+.offers-section h2 {
+    font-size: 20pt;
+} */
+
+.sub-headline {
+    color: #70C1B3;
+    font-weight: 600;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.elearning-section .sub-headline {
+    color: white;
+}
+
+.yellow-line {
+    border-style: solid;
+    border-color: #F5CD4A;
+    border-width: 0px 0px 7px 0px;
+    content: "";
+    height: 10px;
+    width: 100px;
+    margin: 0 auto;
+}
+
+.about-section h1, img {
+    text-align: center;
+}
+
+.about-section h2 {
+    color: white;
+}
+
+.about-section img {
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
+
+.about-section ul>li {
+    line-height: 250%;
+}
+
+.about-section a {
+    color: white;
+}
+
+.testimonials-section {
+    padding-bottom: 0em;
+}
+
+.testimonials-section h1 {
+    color: #70C1B3;
+    text-align: center;
+}
+
+.testimonial {
+    padding: 1em 1em 0.5em 1em;
+    margin: 0.5em;
+    background-color: #F9F9F9;
+}
+
+.testimonial p {
+    padding-top: 1em;
+    color: #70C1B3;
+}
+
+.testimonial img {
+    width: 1.5em;
+}
+
+.contact-section {
+    text-align: center;
+}
+
+.elearning-section {
+    text-align: center;
+}
+
+.call-to-action-button {
+    font-weight: 600;
+    text-transform: uppercase;
+    color: white;
+    background-color: #F5CD4A;
+}
+
+.call-to-action-button:hover {
+    background-color: #eec356;
+}
+
+.light-button {
+    color: #70C1B3;
+    border: solid 2px #70C1B3;
+    background-color: transparent;
+}
+
+.light-button:hover {
+    color: white;
+    background-color: #70C1B3;
+}
+
+.footer-section {
+    text-align: center;
+    color: grey;
+}
+
+.footer-section a {
+    color: grey;
+}
+
+#impressum-modal {
+    padding: 50px;
+}
+
+#impressum-modal span {
+    color: grey;
+}
+
+/* The Masonry Container */
+
+.masonry {
+    margin: 4em auto;
+    column-gap: 0.1em;
+}
+
+/* The Masonry Item */
+
+.item {
+    background: #fff;
+    padding: 0.1em;
+    margin: 0 0 0.1em;
+    display: inline-block;
+}
+
+/* E-learning section vertical alignment fix-up */
+
+.elearning-image {
+    height: 100%;
+    width: 100%;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+    justify-items: center;
+}
+
+.about-container {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
+
+.about-section ul li {
+    line-height: 200%;
+}
