@@ -312,7 +312,7 @@ Large only
 
 .about-container {
     display: grid;
-    align-items: center;
+    align-items: top;
     justify-items: center;
 }
 
