@@ -235,6 +235,9 @@ Large only
 
 .elearning-section {
     text-align: center;
+    background: url("../img/bg.svg") no-repeat top center scroll;
+    background-size: cover;
+    /*padding: 0px;*/
 }
 
 .call-to-action-button {
