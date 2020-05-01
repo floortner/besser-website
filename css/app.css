@@ -1,3 +1,5 @@
+/* blue #5fafd6 yellow #F5CD4A */
+
 body, h1, h2, h3, h4, h5 {
     font-family: 'Lato', sans-serif;
 }
@@ -13,7 +15,7 @@ h1, .hero-section-text, h2 {
 .hero-section {
     background: url("../img/bg.svg") no-repeat top center scroll;
     background-size: cover;
-    padding: 0px;
+    padding: 0em;
 }
 
 .logo {
@@ -47,7 +49,7 @@ h1, .hero-section-text, h2 {
         width: 100px;
     }
     .hero-section-image {
-        width: 170px;
+        width: 160px;
     }
     .cropcircle {
         width: 120px;
@@ -80,10 +82,10 @@ h1, .hero-section-text, h2 {
         width: 100px;
     }
     .hero-section-image {
-        width: 300px;
+        width: 240px;
     }
     .hero-section {
-        min-height: 550px;
+        min-height: 500px;
     }
     h1 {
         font-size: 2em;
@@ -107,6 +109,9 @@ h1, .hero-section-text, h2 {
 @media screen and (min-width: 64em) {
     .hero-section {
         min-height: 700px;
+    }
+    .hero-section-image {
+        width: 320px;
     }
     .about-container {
         grid-template-columns: 50% 50%;
@@ -167,7 +172,7 @@ Large only
     color: #70C1B3;
     font-weight: 600;
     text-align: center;
-    padding-bottom: 20px;
+    padding-bottom: 1em;
 }
 
 .elearning-section .sub-headline {
@@ -192,11 +197,6 @@ Large only
     color: white;
 }
 
-.about-section img {
-    padding-bottom: 30px;
-    padding-top: 30px;
-}
-
 .about-section ul>li {
     line-height: 250%;
 }
@@ -215,7 +215,7 @@ Large only
 }
 
 .testimonial {
-    padding: 1em 1em 0.5em 1em;
+    padding: 1em 1em 0.1em 1em;
     margin: 0.5em;
     background-color: #F9F9F9;
 }
@@ -251,7 +251,7 @@ Large only
     background-color: #eec356;
 }
 
-.light-button {
+/*.light-button {
     color: #70C1B3;
     border: solid 2px #70C1B3;
     background-color: transparent;
@@ -260,11 +260,12 @@ Large only
 .light-button:hover {
     color: white;
     background-color: #70C1B3;
-}
+}*/
 
 .footer-section {
     text-align: center;
     color: grey;
+    padding-top: 0em;
 }
 
 .footer-section a {
@@ -272,7 +273,7 @@ Large only
 }
 
 #impressum-modal {
-    padding: 50px;
+    padding: 1.5em;
 }
 
 #impressum-modal span {
