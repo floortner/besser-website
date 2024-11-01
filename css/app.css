@@ -1,124 +1,132 @@
 /* blue #5fafd6 yellow #F5CD4A */
 
-body, h1, h2, h3, h4, h5 {
-    font-family: 'Lato', sans-serif;
+body,
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Lato", sans-serif;
 }
 
-h1, .hero-section-text, h2 {
-    font-weight: 900;
+h1,
+.hero-section-text,
+h2 {
+  font-weight: 900;
 }
 
-.menu>li>a, .hero-section-text {
-    color: white;
+.menu > li > a,
+.hero-section-text {
+  color: white;
 }
 
 .hero-section {
-    background: url("../img/bg.svg") no-repeat top center scroll;
-    background-size: cover;
-    padding: 0em;
+  background: url("../img/bg.svg") no-repeat top center scroll;
+  background-size: cover;
+  padding: 0em;
 }
 
 .logo {
-    width: 200px;
-    min-width: 100px;
+  width: 200px;
+  min-width: 100px;
 }
 
 .hero-section-image {
-    margin: auto;
-    max-width: 400px;
+  margin: auto;
+  max-width: 400px;
 }
 
 .hero-section-text {
-    margin: auto;
+  margin: auto;
 }
 
 .cropcircle {
-    width: 300px;
-    height: 300px;
-    border-radius: 100%;
-    border: solid 3px #F5CD4A;
-    background: #eee no-repeat center;
-    background-size: cover;
-    background-image: url('../img/angelika.jpg');
+  width: 300px;
+  height: 300px;
+  border-radius: 100%;
+  border: solid 3px #f5cd4a;
+  background: #eee no-repeat center;
+  background-size: cover;
+  background-image: url("../img/angelika.jpg");
 }
 
 /* small only */
 
 @media screen and (max-width: 39.9375em) {
-    .logo {
-        width: 100px;
-    }
-    .hero-section-image {
-        width: 160px;
-    }
-    .cropcircle {
-        width: 120px;
-        height: 120px;
-    }
-    .hero-section {
-        min-height: 400px;
-    }
-    h1 {
-        font-size: 1.2em;
-    }
-    h2 {
-        font-size: 1em;
-    }
-    h3 {
-        font-size: 0.9em;
-    }
-    .about-container {
-        column-count: 1;
-    }
-    .masonry {
-        column-count: 1;
-    }
+  .logo {
+    width: 100px;
+  }
+  .hero-section-image {
+    width: 160px;
+  }
+  .cropcircle {
+    width: 120px;
+    height: 120px;
+  }
+  .hero-section {
+    min-height: 400px;
+  }
+  h1 {
+    font-size: 1.2em;
+  }
+  h2 {
+    font-size: 1em;
+  }
+  h3 {
+    font-size: 0.9em;
+  }
+  .about-container {
+    column-count: 1;
+  }
+  .masonry {
+    column-count: 1;
+  }
 }
 
 /* medium only */
 
 @media screen and (min-width: 40em) and (max-width: 63.9375em) {
-    .logo {
-        width: 100px;
-    }
-    .hero-section-image {
-        width: 240px;
-    }
-    .hero-section {
-        min-height: 500px;
-    }
-    h1 {
-        font-size: 2em;
-    }
-    h2 {
-        font-size: 1.6em;
-    }
-    h3 {
-        font-size: 1.4em;
-    }
-    .about-container {
-        column-count: 1;
-    }
-    .masonry {
-        column-count: 3;
-    }
+  .logo {
+    width: 100px;
+  }
+  .hero-section-image {
+    width: 240px;
+  }
+  .hero-section {
+    min-height: 500px;
+  }
+  h1 {
+    font-size: 2em;
+  }
+  h2 {
+    font-size: 1.6em;
+  }
+  h3 {
+    font-size: 1.4em;
+  }
+  .about-container {
+    column-count: 1;
+  }
+  .masonry {
+    column-count: 3;
+  }
 }
 
 /* large and above */
 
 @media screen and (min-width: 64em) {
-    .hero-section {
-        min-height: 700px;
-    }
-    .hero-section-image {
-        width: 320px;
-    }
-    .about-container {
-        grid-template-columns: 50% 50%;
-    }
-    .masonry {
-        column-count: 4;
-    }
+  .hero-section {
+    min-height: 700px;
+  }
+  .hero-section-image {
+    width: 320px;
+  }
+  .about-container {
+    grid-template-columns: 50% 50%;
+  }
+  .masonry {
+    column-count: 4;
+  }
 }
 
 /* for reference 
@@ -137,30 +145,40 @@ Large and up
 Large only
 @media screen and (min-width: 64em) and (max-width: 74.9375em) {}*/
 
-.offers-section, .testimonials-section, .about-section, .contact-section, .footer-section, .elearning-section {
-    padding-top: 3em;
-    padding-bottom: 3em;
-    padding-left: 1.5em;
-    padding-right: 1.5em;
+.offers-section,
+.testimonials-section,
+.about-section,
+.contact-section,
+.footer-section,
+.elearning-section {
+  padding-top: 3em;
+  padding-bottom: 3em;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
 }
 
-.offers-section, .testimonials-section, .contact-section, .footer-section {
-    background-color: white;
-    color: black;
+.offers-section,
+.testimonials-section,
+.contact-section,
+.footer-section {
+  background-color: white;
+  color: black;
 }
 
-.offers-section h1, .offers-section h2 {
-    color: #70C1B3;
-    font-weight: 600;
+.offers-section h1,
+.offers-section h2 {
+  color: #70c1b3;
+  font-weight: 600;
 }
 
-.about-section, .elearning-section {
-    background-color: #70C1B3;
-    color: white;
+.about-section,
+.elearning-section {
+  background-color: #70c1b3;
+  color: white;
 }
 
 .offers-section h1 {
-    text-align: center;
+  text-align: center;
 }
 
 /* 
@@ -169,86 +187,87 @@ Large only
 } */
 
 .sub-headline {
-    color: #70C1B3;
-    font-weight: 600;
-    text-align: center;
-    padding-bottom: 1em;
+  color: #70c1b3;
+  font-weight: 600;
+  text-align: center;
+  padding-bottom: 1em;
 }
 
 .elearning-section .sub-headline {
-    color: white;
+  color: white;
 }
 
 .yellow-line {
-    border-style: solid;
-    border-color: #F5CD4A;
-    border-width: 0px 0px 7px 0px;
-    content: "";
-    height: 10px;
-    width: 100px;
-    margin: 0 auto;
+  border-style: solid;
+  border-color: #f5cd4a;
+  border-width: 0px 0px 7px 0px;
+  content: "";
+  height: 10px;
+  width: 100px;
+  margin: 0 auto;
 }
 
-.about-section h1, img {
-    text-align: center;
+.about-section h1,
+img {
+  text-align: center;
 }
 
 .about-section h2 {
-    color: white;
+  color: white;
 }
 
-.about-section ul>li {
-    line-height: 250%;
+.about-section ul > li {
+  line-height: 250%;
 }
 
 .about-section a {
-    color: white;
+  color: white;
 }
 
 .testimonials-section {
-    padding-bottom: 0em;
+  padding-bottom: 0em;
 }
 
 .testimonials-section h1 {
-    color: #70C1B3;
-    text-align: center;
+  color: #70c1b3;
+  text-align: center;
 }
 
 .testimonial {
-    padding: 1em 1em 0.1em 1em;
-    margin: 0.5em;
-    background-color: #F9F9F9;
+  padding: 1em 1em 0.1em 1em;
+  margin: 0.5em;
+  background-color: #f9f9f9;
 }
 
 .testimonial p {
-    padding-top: 1em;
-    color: #70C1B3;
+  padding-top: 1em;
+  color: #70c1b3;
 }
 
 .testimonial img {
-    width: 1.5em;
+  width: 1.5em;
 }
 
 .contact-section {
-    text-align: center;
+  text-align: center;
 }
 
 .elearning-section {
-    text-align: center;
-    background: url("../img/bg.svg") no-repeat top center scroll;
-    background-size: cover;
-    /*padding: 0px;*/
+  text-align: center;
+  background: url("../img/bg.svg") no-repeat top center scroll;
+  background-size: cover;
+  /*padding: 0px;*/
 }
 
 .call-to-action-button {
-    font-weight: 600;
-    text-transform: uppercase;
-    color: white;
-    background-color: #F5CD4A;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: white;
+  background-color: #f5cd4a;
 }
 
 .call-to-action-button:hover {
-    background-color: #eec356;
+  background-color: #eec356;
 }
 
 /*.light-button {
@@ -263,59 +282,64 @@ Large only
 }*/
 
 .footer-section {
-    text-align: center;
-    color: grey;
-    padding-top: 0em;
+  text-align: center;
+  color: grey;
+  padding-top: 0em;
 }
 
 .footer-section a {
-    color: grey;
+  color: grey;
 }
 
 #impressum-modal {
-    padding: 1.5em;
+  padding: 1.5em;
 }
 
 #impressum-modal span {
-    color: grey;
+  color: grey;
 }
 
 /* The Masonry Container */
 
 .masonry {
-    margin: 4em auto;
-    column-gap: 0.1em;
+  margin: 4em auto;
+  column-gap: 0.1em;
 }
 
 /* The Masonry Item */
 
 .item {
-    background: #fff;
-    padding: 0.1em;
-    margin: 0 0 0.1em;
-    display: inline-block;
+  background: #fff;
+  padding: 0.1em;
+  margin: 0 0 0.1em;
+  display: inline-block;
 }
 
 /* E-learning section vertical alignment fix-up */
 
 .elearning-image {
-    height: 100%;
-    width: 100%;
+  height: 100%;
+  width: 100%;
 }
 
 .container {
-    display: grid;
-    grid-template-columns: 50% 50%;
-    align-items: center;
-    justify-items: center;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  align-items: center;
+  justify-items: center;
 }
 
 .about-container {
-    display: grid;
-    align-items: top;
-    justify-items: center;
+  display: grid;
+  align-items: top;
+  justify-items: center;
 }
 
 .about-section ul li {
-    line-height: 200%;
+  line-height: 200%;
+}
+
+.label {
+  color: rgb(100, 100, 100);
+  background-color: rgb(210, 210, 210);
 }
