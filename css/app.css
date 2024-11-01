@@ -1,5 +1,11 @@
 /* blue #5fafd6 yellow #F5CD4A */
 
+element {
+  --main-color: #70c1b3;
+  --secondary-color: #f5cd4a;
+  ---color: #5fafd6;
+}
+
 body,
 h1,
 h2,
@@ -224,6 +230,8 @@ img {
   color: white;
 }
 
+/* Testimomials */
+
 .testimonials-section {
   padding-bottom: 0em;
 }
@@ -246,6 +254,11 @@ img {
 
 .testimonial img {
   width: 1.5em;
+}
+
+.school {
+  color: black;
+  background-color: rgb(220, 220, 220);
 }
 
 .contact-section {
@@ -337,9 +350,4 @@ img {
 
 .about-section ul li {
   line-height: 200%;
-}
-
-.label {
-  color: rgb(100, 100, 100);
-  background-color: rgb(210, 210, 210);
 }
