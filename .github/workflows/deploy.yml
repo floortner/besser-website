@@ -11,12 +11,6 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Check secrets present
-        run: |
-          echo "FTP_SERVER set: ${{ secrets.FTP_SERVER != '' }}"
-          echo "FTP_USERNAME set: ${{ secrets.FTP_USERNAME != '' }}"
-          echo "FTP_PASSWORD set: ${{ secrets.FTP_PASSWORD != '' }}"
-
       - name: FTP Deploy
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
