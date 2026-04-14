@@ -12,6 +12,7 @@ Static marketing website for "besser lesen schreiben" (Mag. Angelika Ortner, LRS
 - `css/foundation.css` + `css/app.css` — ZURB Foundation base plus site-specific overrides. `app.css` is the file to edit for visual changes.
 - `js/app.js`, `js/vendor/` — jQuery + Foundation JS. Minimal custom JS.
 - `fonts/`, `img/` — assets referenced directly from `index.html`/CSS.
+- `screenshots/` — store all screenshots captured during testing (Playwright or any other tool) here. Not deployed.
 - `temp.html` — scratch file, not deployed.
 
 ## Local development
@@ -21,12 +22,10 @@ There is no npm script; `package.json` only lists legacy gulp devDependencies. N
 To preview locally, serve the directory with any static server, e.g.:
 
 ```
-python3 -m http.server 8000
-# or
 npx serve .
 ```
 
-Then open `http://localhost:8000`.
+Then open `http://localhost:3000`.
 
 ## Deploy
 
