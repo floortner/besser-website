@@ -13,13 +13,10 @@ Static marketing website for "besser lesen schreiben" (Mag. Angelika Ortner, LRS
 - `js/app.js`, `js/vendor/` — jQuery + Foundation JS. Minimal custom JS.
 - `fonts/`, `img/` — assets referenced directly from `index.html`/CSS.
 - `screenshots/` — store all screenshots captured during testing (Playwright or any other tool) here. Not deployed.
-- `temp.html` — scratch file, not deployed.
 
 ## Local development
 
-There is no npm script; `package.json` only lists legacy gulp devDependencies. Node-related warnings can be ignored (noted in README).
-
-To preview locally, serve the directory with any static server, e.g.:
+No build step. Preview locally by serving the directory with any static server, e.g.:
 
 ```
 npx serve .
@@ -29,7 +26,7 @@ Then open `http://localhost:3000`.
 
 ## Deploy
 
-Deployment is **FTP to world4you** (`ftp31.world4you.com`, dest `/`). The legacy `gulpfile.js` still contains a `deploy` task (`gulp deploy -u <user> -p <pass>`) that uploads `css/**`, `fonts/**`, `img/**`, `js/**`, `index.html`. The README says gulp was removed — in practice the file is still there but the project is treated as pure static; confirm with the user before running gulp tasks. Uploading the five globs above via any FTP client achieves the same result.
+Deployment is **FTP to world4you** (`ftp31.world4you.com`, dest `/`). Upload `css/**`, `fonts/**`, `img/**`, `js/**`, and `index.html` via any FTP client.
 
 ## Editing conventions
 
